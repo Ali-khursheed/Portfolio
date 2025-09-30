@@ -4,7 +4,7 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
-import { BlogService } from '@pages/blog/blog.service';
+// import { BlogService } from '@pages/blog/blog.service';
 import { RouterLink } from '@angular/router';
 import { MetaService } from '@core/services/meta.service';
 import profileData from '@data/profile.data';
@@ -60,7 +60,7 @@ import { Loader } from '@shared/components/loader/loader';
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-screen-lg mx-auto my-10 text-left "
     >
-      @for (post of blogService.blogs(); track post.id) {
+      <!-- @for (post of blogService.blogs(); track post.id) {
       <a
         class="max-w-sm mx-auto bg-white dark:bg-gray-900 rounded-lg"
         [routerLink]="['/blog/' + post.slug + '']"
@@ -82,7 +82,7 @@ import { Loader } from '@shared/components/loader/loader';
           </p>
         </div>
       </a>
-      }
+      } -->
     </div>
     }@placeholder {
     <loader />
@@ -90,7 +90,7 @@ import { Loader } from '@shared/components/loader/loader';
   `,
 })
 export class BlogPage {
-  blogService = inject(BlogService);
+//   blogService = inject(BlogService);
   metaService = inject(MetaService);
   constructor() {
     this.metaService.setMetaTags(
