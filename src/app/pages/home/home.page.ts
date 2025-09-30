@@ -3,7 +3,7 @@ import { MetaService } from '@core/services/meta.service';
 import profileData from '@data/profile.data';
 import { ExpertiseArea } from '@pages/home/components/expertise-area/expertise-area';
 import { Intro } from '@pages/home/components/intro/intro';
-import { LanguageTools } from '@pages/home/components/language-tools/language-tools';
+// import { LanguageTools } from '@pages/home/components/language-tools/language-tools';
 import { InWork } from '@pages/home/components/in-work/in-work';
 import { Loader } from '@shared/components/loader/loader';
 @Component({
@@ -11,12 +11,12 @@ import { Loader } from '@shared/components/loader/loader';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [ExpertiseArea, Intro, LanguageTools, InWork, Loader],
+  imports: [ExpertiseArea, Intro, InWork, Loader],
   template: `
     @defer(on immediate){
       <intro/>
       <expertise-area/>
-      <language-tools/>
+      <!-- <language-tools/> -->
       <in-work/>
     }@placeholder {
       <loader/>

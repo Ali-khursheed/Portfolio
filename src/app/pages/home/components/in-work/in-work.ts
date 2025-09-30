@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { Devicon } from '@shared/components/devicon/devicon';
-import { LanguageToolService } from '@pages/home/components/language-tools/language-tool.service';
+// import { LanguageToolService } from '@pages/home/components/language-tools/language-tool.service';
 import inWorkData from '@data/in-work.data';
 @Component({
   selector: 'in-work',
@@ -13,10 +13,10 @@ import inWorkData from '@data/in-work.data';
   `,
 })
 export class InWork {
-  languageToolService = inject(LanguageToolService);
-  workTools = computed(() =>
-    this.languageToolService
-      .languageTools()
-      .filter((lt) => inWorkData.includes(lt.name))
-  );
+  //   languageToolService = inject(LanguageToolService);
+  //   workTools = computed(() =>
+  //     this.languageToolService
+  //       .languageTools()
+  //       .filter((lt) => inWorkData.includes(lt.name))
+  //   );
 }
