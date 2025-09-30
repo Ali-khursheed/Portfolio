@@ -5,11 +5,5 @@ export const BlogRoutes: Routes = [
     path: '',
     component: BlogPage,
   },
-  {
-    path: ':Education',
-    loadChildren: () =>
-      import('./blog-detail/blog-detail.routes').then(
-        (m) => m.BlogDetailRoutes
-      ),
-  },
+ 
 ];

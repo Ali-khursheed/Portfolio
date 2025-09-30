@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 // import { BlogService } from '@pages/blog/blog.service';
 import { RouterLink } from '@angular/router';
-import { MetaService } from '@core/services/meta.service';
+
 import profileData from '@data/profile.data';
 import { ImageSkeletonDirective } from '@core/directives/image-skeleton.directive';
 import { Loader } from '@shared/components/loader/loader';
@@ -90,13 +90,13 @@ import { Loader } from '@shared/components/loader/loader';
   `,
 })
 export class BlogPage {
-//   blogService = inject(BlogService);
-  metaService = inject(MetaService);
+  //   blogService = inject(BlogService);
+  //   metaService = inject(MetaService);
   constructor() {
-    this.metaService.setMetaTags(
-      `Blogs - ${profileData.name}`,
-      `Blog posts by ${profileData.name}. I share some guide, tutorials and information about software development`,
-      'tech,software,development,thoughts,blog,content,news,tutorials,guide,post'
-    );
+    // this.metaService.setMetaTags(
+    //   `Blogs - ${profileData.name}`,
+    //   `Blog posts by ${profileData.name}. I share some guide, tutorials and information about software development`,
+    //   'tech,software,development,thoughts,blog,content,news,tutorials,guide,post'
+    // );
   }
 }
