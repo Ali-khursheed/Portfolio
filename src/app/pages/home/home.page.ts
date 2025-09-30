@@ -28,13 +28,12 @@ export class HomePage {
   constructor() {
     this.metaService.setMetaTags(
       `Home - ${profileData.name}`,
-      'Dive into my portfolio, a passionate software engineer based in the Philippines. Explore the intricacies of my journey, from personal details to exciting projects. Join me on this virtual exploration of technology, creativity, and more.',
+      'Dive into my portfolio, a passionate software engineer based in the Lahore. Explore the intricacies of my journey, from personal details to exciting projects. Join me on this virtual exploration of technology, creativity, and more.',
       [
         'marc kevin flores',
         'marc kevin',
         'marckevinflores',
         'software engineer',
-        'philippines',
         'bio',
         'developer',
         'portfolio',

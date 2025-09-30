@@ -22,7 +22,7 @@ import { ExpertiseAreaSchema } from '@data/schema/expertise-area.schema';
             </div>
             <div class="flex flex-col gap-3 text-center">
               <icon [path]="s.icon" [size]="50" class="mx-auto"/>
-              <span class="text-xl font-semibold dark:text-white">{{s.percent}}</span>
+              <!-- <span class="text-xl font-semibold dark:text-white">{{s.percent}}</span> -->
               <span class="text-gray-800 dark:text-gray-300">{{s.name}}</span>
             </div>
           </div>

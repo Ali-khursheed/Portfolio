@@ -1,5 +1,5 @@
 export interface ExpertiseAreaSchema{
   icon: string,
-  percent: string,
+//   percent: string,
   name: string
 }
