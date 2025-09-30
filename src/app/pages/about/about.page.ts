@@ -1,8 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component, ViewEncapsulation, effect, inject } from '@angular/core';
 
-import profileData from '@data/profile.data';
-
 @Component({
   selector: 'about',
   template: `
@@ -25,13 +23,7 @@ import profileData from '@data/profile.data';
           ><br />{{ a.desc }}
         </p>
       </div>
-      <!-- <div class="flex flex-col gap-5">
-        <h1 class="text-2xl font-semibold dark:text-white">Activity:</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <music />
-          <watch />
-        </div>
-      </div> -->
+      
 
       <div class="flex flex-col gap-5">
         <h1 class="text-2xl font-semibold dark:text-white">
@@ -53,8 +45,7 @@ import profileData from '@data/profile.data';
   standalone: true,
 })
 export class AboutPage {
-  //   metaService = inject(MetaService);
-  
+
   constructor() {
     // this.metaService.setMetaTags(
     //   `About - ${profileData.name}`,
