@@ -1,10 +1,10 @@
-import { ProfileSchema } from '@data/schema/profile.schema';
+import { ProfileSchema } from "@data/schema/profile.schema";
 
 const profileData: ProfileSchema = {
-  name: 'Ali khursheed',
-  bio: 'Full Stack Develpor',
-  resumeLink: `cv.pdf`,
-  greetings: ['Hello, world', 'Ali khursheed'],
-  pronouns: '',
+	name: "Ali khursheed",
+	bio: "Software Develpor",
+	resumeLink: `cv.pdf`,
+	greetings: ["Hello, world", "Ali khursheed"],
+	pronouns: "",
 };
 export default profileData;
